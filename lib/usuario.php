@@ -74,4 +74,23 @@ class Usuario {
     function setPref03($pref03) {
         $this->pref03 = $pref03;
     }
+    
+    function validaAcceso(){
+        /*valida que iniciamos la conexion*/
+        if (!isset($dblink)){
+            return false;
+        }
+        $PDOst=$dblink->prepare('SELECT nombre'
+                . 'FROM usuario'
+                . 'WHERE nomusuario <? AND clave ?');
+        /*paso de parametro SQL where*/
+        if ($PDOst->execute(array($this->nomusu, $this->clave))){
+            return false;
+    }
+    else{
+        $row=$PDOst->fetch();
+        $this->nombre=$row["nombre"];
+        return true;
+    }
+    }
 }

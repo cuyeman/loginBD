@@ -1,7 +1,6 @@
 <?php
-include ('/lib/constantes.php');
+include ('lib/constantes.php');
 ?>
-
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
