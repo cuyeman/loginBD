@@ -1,13 +1,13 @@
 <?php
 
 class Usuario {
-    private $idusuario;
-    private $nombre;
-    private $nomusu;
-    private $clave;
-    private $pref01;
-    private $pref02;
-    private $pref03;
+    var $idusuario;
+    var $nombre;
+    var $nomusu;
+    var $clave;
+    var $pref01;
+    var $pref02;
+    var $pref03;
     
     function __construct($idusuario, $nombre, $nomusu, $clave, $pref01, $pref02, $pref03) {
         $this->idusuario = $idusuario;

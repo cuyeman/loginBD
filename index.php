@@ -1,3 +1,7 @@
+<?php
+include ('/lib/constantes.php');
+?>
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -10,8 +14,13 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <br>
+        <form method="post" action="<?=URLBASE;?>controladores/AccUsuario.php" >
+            USUARIO<input  type="text" name="usuario">
+            <br>
+            CLAVE<input type="text" name="clave">
+            <br>    
+            <input type="submit" value="ENVIAR">
+        </form>
     </body>
 </html>
