@@ -6,4 +6,4 @@
  * and open the template in the editor.
  */
 
-define("URLBASE","http://localhost:8081/LoginPhp/index.php/");
+define("URLBASE","http://localhost:8081/LoginPhp/");
